@@ -78,6 +78,7 @@ module Turkee
         hit.reward = reward
         hit.lifetime = lifetime.to_i.days.seconds.to_i
         hit.duration = 900
+        hit.keywords = ["categorise", "data", "entry", "charity", "company", "catgegorize", "question", "research", "google"]
         hit.question(f_url, :frame_height => HIT_FRAMEHEIGHT)
         unless qualifications.empty?
           qualifications.each do |key, value|
